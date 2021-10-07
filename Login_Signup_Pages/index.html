@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--Search TODO to find tasks for later-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content  = "width=device-width, initial-scale = 1.0">
+        <title>Course Connections Login / Sign Up</title>
+
+        <!--Link to CSS stylesheet-->
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <h2>Course Connections</h2>
+        <!--Create Log In Form-->
+        <div class = "container">
+
+            <form class="login form_hidden" id = "login"> 
+                <!--Login  Form Title-->
+                <div class = "title_text">
+                    <div class = "login_title">Log in</div>
+                </div>
+                <!--Error Message-->
+                <div class = "login_form_error"></div>
+
+                <!--Create form input for username and password and error message-->
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" placeholder="username">
+                </div>
+                <div class = "input_login-group">
+                    <input type = "password" class = "input_login" placeholder="password">
+                </div>
+                <!--Log In Button-->
+                <button class = "login_button" type ="submit">Log In</button>
+                <!--TODO: Include Link to take logged in user to home page-->
+                
+
+                <!--Create Forgot Password and Create Account Links-->
+                <p class = login_text>
+                    <!--TODO: Create link to forgot password page and replace href = #-->
+                    <a href ="#" class = "form_link">Forgot your Password?</a>
+                </p>
+                <p class = login_text>
+                    <a href ="#signup" class = "form_link" id = "signup_link">New User? Create an Account.</a>
+                </p>
+            </form>
+
+            <!-- Create Sign Up Section -->
+            <form class="signup" id = "signup"> 
+                <!--Signup Form Title-->
+                <div class = "title_text">
+                    <div class = "signup_title">Sign Up</div>
+                </div>
+
+                <!--Error Message-->
+                <div class = "login_form_error"></div>
+
+                <!-- Create Input Fields -->
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" placeholder="username">
+                </div>
+                <div class = "input_login-group">
+                    <input type = "text" class = "input_login" placeholder="email address">
+                </div>
+                <div class = "input_login-group">
+                    <input type = "password" class = "input_login" placeholder="password">
+                </div>
+                <div class = "input_login-group">
+                    <input type = "password" class = "input_login" placeholder="confirm password">
+                </div>
+
+                <!-- Select University Dropdown -->
+                <select class = "select_uni">
+                    <option disabled selected>Choose University</option>
+                    <option value = "Oakland University">Oakland University, MI</option>
+                </select>
+
+                <!--Create Account Button-->
+                <button class = "login_button" type ="submit">Create Account</button>
+
+               
+                <p class = login_text>
+                    <a href ="#login" class = "form_link" id = "login_link">Have an Account? Sign In.</a>
+                </p>
+
+            </form>
+        </div>
+
+
+        <!--Link to JS file-->
+        <script src = main.js></script>
+    </body>
+</html>

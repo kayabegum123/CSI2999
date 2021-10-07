@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: 'Verdana' sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Style Form text and content */
+html, body {
+    display: grid;
+    height: 100;
+    place-items: center;
+    justify-items: center;
+    font-size: 20px;
+    background: ghostwhite;
+    /* background: -webkit-linear-gradient(left, darkcyan, darkturquoise, mediumturquoise); */
+}
+
+/* Style area around form */
+.container {
+    
+    max-width: 450px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Style Log In text */
+.container .title_text{
+    display: flex;
+    width: 200%;
+}
+.container .title_text .login_title {
+    width: 35%;
+    font-size: 25px;
+    font-weight: 600;
+}
+.container .title_text .signup_title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.title_text {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Style username and password boxes */
+.input_login-group {
+    margin-bottom: 1rem;
+}
+.input_login {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    outline: none;
+    background: #eeeeee;
+    border-bottom-width: 2px; 
+}
+
+/* username and password fields change color when clicked */
+.input_login:focus {
+    border-color: cyan;
+    background: white;
+}
+
+/* Style Error Message */
+.login_form_error {
+    text-align: center;
+    margin: 1rem;
+    font-size: 15px;
+    color:crimson;
+}
+
+/* Color of change pass and create account links */
+.login_link {
+    color: mediumturquoise;
+    text-decoration: none
+}
+
+.login_text {
+    text-align: center;
+}
+
+/* Style University Dropdown Menu */
+.select_uni {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style login button */
+.login_button {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background: -webkit-linear-gradient(left, darkcyan, darkturquoise, mediumturquoise);
+}
+
+.login_button:active{
+    transform: scale(.98);
+}
+
+/* Display only one form at a time */
+.form_hidden {
+    display: none;
+}
