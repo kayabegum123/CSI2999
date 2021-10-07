@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Connections</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Times New Roman", Times, serif;
+                font-style: italic;
+                margin: 0;
+            }
+
+            .header {
+                padding: 80px;
+                text-align: center;
+                background: #BFDCF7;
+                color: white;
+            }
+
+            /* Increase the font size of the h1 element */
+            .header h1 {
+                font-size: 40px;
+                font-family: 'Trade Winds';
+                text-shadow: 2px 2px 4px #000000;
+
+            }
+
+            /*style the top navigation bar*/
+            .topnav {
+                overflow: hidden;
+                background-color: whitesmoke;
+            }
+
+            /* style the links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+            /*color changes when hovered over*/
+
+            .topnav a:hover {
+                background-color: #8BC4F9;
+                color: #f2f2f2;
+                
+            }
+
+            /* Create two unequal columns that floats next to each other */
+            /* Left column */
+            .leftcolumn {
+                float: left;
+                width: 75%;
+            }
+
+            /* Right column */
+            .rightcolumn {
+                float: left;
+                width: 25%;
+                background-color: #F0F8FF;
+                padding-left: 20px;
+            }
+
+            /* Fake image */
+            .fakeimg {
+                background-color: whitesmoke;
+                width: 100%;
+                padding: 20px;
+            }
+
+            /* Add a card effect for articles */
+            .card {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+            /* footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: whitesmoke;
+                margin-top: 20px;
+            }
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .topnav a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Course Connections</h1>
+            <p> words <p>
+        </div>
+
+
+
+
+        <div class="topnav">
+            <a href="#">a thing</a>
+            <a href="#">another thing</a>
+            <a href="#">one more thing</a>   
+            <a href="#" style="float:right">log out</a>
+        </div>
+
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>heading title thing</h2>
+                    <h5>description</h5>
+                    <div class="fakeimg" style="height:200px;">pictures go here</div>
+                    <p>some words</p>
+                    <p>more words</p>
+                </div>
+                <div class="card">
+                    <h2>heading title thing</h2>
+                    <h5>description</h5>
+                    <div class="fakeimg" style="height:200px;">pictures go here</div>
+                    <p>some words</p>
+                    <p>more words</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>something...</h2>
+                    <div class="fakeimg" style="height:100px;">pictures go here</div>
+                    <p>words...</p>
+                </div>
+                <div class="card">
+                    <h3>something to show pictures?</h3>
+                    <div class="fakeimg"><p>pictures go here</p></div>
+                    <div class="fakeimg"><p>pictures go here</p></div>
+                    <div class="fakeimg"><p>pictures go here</p></div>
+                </div>
+                <div class="card">
+                    <h3>final words!</h3>
+                    <p>words again!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>footer thing</h2>
+        </div>
+
+    </body>
+</html>
